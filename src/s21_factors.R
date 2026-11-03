@@ -3,13 +3,11 @@
 # 調査票(第20回の配付資料)の選択肢に合わせて、カテゴリ型の変数を factor にする関数を定義する
 #
 # 使い方
-#   source("https://github.com/nishinoh/r4gh/raw/main/src/21_set_factors.R")
+#   source("https://github.com/nishinoh/r4gh/raw/main/src/21_factors.R")
 #   survey <- setSurveyFactors(survey_raw)
 #
 # 読み込んだままのデータ(survey_raw)は書き換えず、factor にしたデータを別に返す。
 # survey_raw から作り直す限り、何度実行しても結果は同じになる。
-#
-# 原本は lec_ds リポジトリの src/21_set_factors.R。r4gh リポジトリに置いてURLから読み込ませる
 
 setSurveyFactors <- function(data) {
 	# factor にしたデータをもう一度渡すと、選択肢の対応が取れずに全て NA になってしまうので止める
